@@ -1,4 +1,4 @@
-# Groq AI
+# Video Summaries powered by Groq
 
 > Note: Fork and clone this repository if needed
 
@@ -9,71 +9,26 @@ python3 -m venv ~/.venvs/aienv
 source ~/.venvs/aienv/bin/activate
 ```
 
-### 2. Install libraries
-
-```shell
-pip install -U groq phidata
-```
-
-### 3. Export GROQ API Key
+### 2. Export your Groq API Key
 
 ```shell
 export GROQ_API_KEY=***
 ```
 
-### 4. Run Assistants
-
-- basic
+### 3. Install libraries
 
 ```shell
-python cookbook/llms/groq/basic.py
+pip install -r cookbook/llms/groq/video_summary/requirements.txt
 ```
 
-- web search
+### 4. Run Streamlit App
 
 ```shell
-python cookbook/llms/groq/assistant.py
+streamlit run cookbook/llms/groq/video_summary/app.py
 ```
 
-- structured output
+- Open [localhost:8501](http://localhost:8501) to view your Video Summary App
 
-```shell
-python cookbook/llms/groq/structured_output.py
-```
+### 5. Message on [discord](https://discord.gg/4MtYHHrgA8) if you have any questions
 
-### 5. Financial analyst
-
-Install libraries
-
-```shell
-pip install -U yfinance
-```
-
-Run using:
-
-```shell
-python cookbook/llms/groq/finance.py
-```
-
-Ask questions like:
-- What's the NVDA stock price
-- Summarize fundamentals for TSLA
-
-### 6. Data analyst
-
-Install libraries
-
-```shell
-pip install -U duckdb
-```
-
-Run using:
-
-```shell
-python cookbook/llms/groq/data_analyst.py
-```
-
-Ask questions like:
-- What is the average rating of movies?
-- Who is the most popular actor?
-- Show me a histogram of movie ratings
+### 6. Star ⭐️ the project if you like it.
